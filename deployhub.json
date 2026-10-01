@@ -1,0 +1,14 @@
+{
+  "name": "deployhub_nextjs",
+  "framework": "Next.js",
+  "category": "Frontend",
+  "runtime": "nodejs",
+  "port": 3000,
+  "buildCommand": "npm install && npm run build",
+  "startCommand": "npm run start",
+  "healthCheck": {
+    "path": "/api/health",
+    "expectedStatus": 200,
+    "timeoutSeconds": 10
+  }
+}
